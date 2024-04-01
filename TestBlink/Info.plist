@@ -6,6 +6,11 @@
 	<array>
 		<string>SF-Pro-Display-Bold.otf</string>
 		<string>SF-Pro-Display-Regular.otf</string>
+		<string>Poppins-Italic.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-Thin.ttf</string>
 	</array>
 	<key>UTExportedTypeDeclarations</key>
 	<array>

@@ -12,7 +12,7 @@ struct TestBlinkApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationBar()
         }
     }
 }
