@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117419B92BBA958E007DACE7 /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117419B82BBA958E007DACE7 /* BusStop.swift */; };
 		118355022BB85FF800DA1DBC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118355012BB85FF800DA1DBC /* LocationManager.swift */; };
 		1187E3CE2BB41AB30038FBF5 /* TestBlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E3CD2BB41AB30038FBF5 /* TestBlinkApp.swift */; };
 		1187E3D02BB41AB30038FBF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187E3CF2BB41AB30038FBF5 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		117419B82BBA958E007DACE7 /* BusStop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
 		118355012BB85FF800DA1DBC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1187E3CA2BB41AB30038FBF5 /* TestBlink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBlink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1187E3CD2BB41AB30038FBF5 /* TestBlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBlinkApp.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117419B72BBA952B007DACE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				117419B82BBA958E007DACE7 /* BusStop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1187E3C12BB41AB30038FBF5 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		1187E3CC2BB41AB30038FBF5 /* TestBlink */ = {
 			isa = PBXGroup;
 			children = (
+				117419B72BBA952B007DACE7 /* Model */,
 				11E1FD642BB5E55A00BC39C9 /* Fonts */,
 				1187E3F92BB48CBB0038FBF5 /* Asset */,
 				1187E3F82BB48CAD0038FBF5 /* View */,
@@ -298,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117419B92BBA958E007DACE7 /* BusStop.swift in Sources */,
 				1187E3D02BB41AB30038FBF5 /* ContentView.swift in Sources */,
 				1187E3CE2BB41AB30038FBF5 /* TestBlinkApp.swift in Sources */,
 				118355022BB85FF800DA1DBC /* LocationManager.swift in Sources */,
