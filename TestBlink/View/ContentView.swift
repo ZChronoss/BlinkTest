@@ -73,14 +73,20 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack () {
-                Image("Logo")
+                
+                /*Image("Logo")
                     .background(
                         Ellipse()
-                            .frame(width: 500, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .stroke(.gray, lineWidth: 10)
+                            .background(Ellipse().fill(Color("OrangeBawaan")))
+                            .frame(width: 500, height: 250, alignment: .center)
                             .padding(.bottom, 150)
                     )
-                    .foregroundStyle(Color("OrangeBawaan"))
-                    .padding(.bottom, 45)
+                    .padding(.bottom, 45)*/
+                
+                //Component Logo yg diatas
+                LogoView()
+                
                 Spacer()
                 ZStack{
                     Rectangle()
