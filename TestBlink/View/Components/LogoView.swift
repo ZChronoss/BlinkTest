@@ -13,17 +13,17 @@ struct LogoView: View {
             Rectangle()
                 .fill(.orangeBawaan)
                 .frame(width: 400, height: 200)
-                .position(x: 200, y: 10)
+                .position(x:200, y:-20)
             
             Image("BackgroundLogo")
-                .position(x: 200, y: -87)
-                //.frame(width: 400, height: 110)
+                .position(x:200, y:-118)
             
             Image("Logo")
-                .position(x: 80, y: 75)
+                .position(x:200, y:30)
 
         }
-        .padding(.top, 1)
+        .frame(width: 400, height: 80)
+
 
         
         

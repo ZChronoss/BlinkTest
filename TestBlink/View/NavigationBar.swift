@@ -4,11 +4,12 @@
 //
 //  Created by Ages on 01/04/24.
 //
-
 import SwiftUI
 
 struct NavigationBar: View {
     var body: some View {
+        
+        //Component Navigation Bar yg dibawah
         TabView{
             ContentView().tabItem {// Explore
                 Image(systemName: "safari.fill")

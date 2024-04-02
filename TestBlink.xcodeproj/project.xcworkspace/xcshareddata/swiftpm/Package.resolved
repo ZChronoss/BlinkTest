@@ -1,0 +1,15 @@
+{
+  "originHash" : "d797d63876cb4df28b977307c86e35b0eed7de3bba6eded61c8ddb7d82b2ed2f",
+  "pins" : [
+    {
+      "identity" : "swiftui-drawer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maustinstar/swiftui-drawer.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6d22f5c1362bfa71f2915c28aebba343b9243363"
+      }
+    }
+  ],
+  "version" : 3
+}

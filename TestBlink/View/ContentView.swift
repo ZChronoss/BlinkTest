@@ -72,7 +72,7 @@ struct ContentView: View {
                 
             VStack () {
                 
-                Image("Logo")
+                /*Image("Logo")
                     .background(
                         Ellipse()
                             .stroke(.gray, lineWidth: 10)
@@ -80,9 +80,11 @@ struct ContentView: View {
                             .frame(width: 500, height: 250, alignment: .center)
                             .padding(.bottom, 150)
                     )
-                    .padding(.bottom, 45)
-                 
-                //LogoView()
+                    .padding(.bottom, 45)*/
+                
+                //Component Logo yg diatas
+                LogoView()
+                
                 Spacer()
                 ZStack{
                     Rectangle()

@@ -18,6 +18,8 @@
 		1187E3FB2BB48D020038FBF5 /* Blink.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1187E3FA2BB48D020038FBF5 /* Blink.svg */; };
 		11E1FD672BB5E58D00BC39C9 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11E1FD652BB5E58D00BC39C9 /* SF-Pro-Display-Regular.otf */; };
 		11E1FD682BB5E58D00BC39C9 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 11E1FD662BB5E58D00BC39C9 /* SF-Pro-Display-Bold.otf */; };
+		D918E51A2BBBB2170046A806 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D918E5192BBBB2170046A806 /* DrawerView.swift */; };
+		D918E51D2BBBB2F60046A806 /* Drawer in Frameworks */ = {isa = PBXBuildFile; productRef = D918E51C2BBBB2F60046A806 /* Drawer */; };
 		D92E2DD52BBAFECD0073FA14 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E2DD42BBAFECD0073FA14 /* NavigationBar.swift */; };
 		D92E2DEA2BBAFF990073FA14 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D92E2DD62BBAFF990073FA14 /* OFL.txt */; };
 		D92E2DEB2BBAFF990073FA14 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D92E2DD72BBAFF990073FA14 /* Poppins-Black.ttf */; };
@@ -87,6 +89,7 @@
 		1187E3FA2BB48D020038FBF5 /* Blink.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Blink.svg; sourceTree = "<group>"; };
 		11E1FD652BB5E58D00BC39C9 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		11E1FD662BB5E58D00BC39C9 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		D918E5192BBBB2170046A806 /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
 		D92E2DD42BBAFECD0073FA14 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		D92E2DD62BBAFF990073FA14 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		D92E2DD72BBAFF990073FA14 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D918E51D2BBBB2F60046A806 /* Drawer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				1187E3D12BB41AB50038FBF5 /* Assets.xcassets */,
-				11E1FD642BB5E55A00BC39C9 /* Fonts */,
 				1187E3FA2BB48D020038FBF5 /* Blink.svg */,
+				11E1FD642BB5E55A00BC39C9 /* Fonts */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -320,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				D92E2E1E2BBB07B50073FA14 /* LogoView.swift */,
+				D918E5192BBBB2170046A806 /* DrawerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -340,6 +345,9 @@
 			dependencies = (
 			);
 			name = TestBlink;
+			packageProductDependencies = (
+				D918E51C2BBBB2F60046A806 /* Drawer */,
+			);
 			productName = TestBlink;
 			productReference = 1187E3CA2BB41AB30038FBF5 /* TestBlink.app */;
 			productType = "com.apple.product-type.application";
@@ -412,6 +420,9 @@
 				Base,
 			);
 			mainGroup = 1187E3C12BB41AB30038FBF5;
+			packageReferences = (
+				D918E51B2BBBB2F60046A806 /* XCRemoteSwiftPackageReference "swiftui-drawer" */,
+			);
 			productRefGroup = 1187E3CB2BB41AB30038FBF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -481,6 +492,7 @@
 				D92E2E0E2BBB01E10073FA14 /* Bus.swift in Sources */,
 				D92E2E192BBB04070073FA14 /* ScheduleScreen.swift in Sources */,
 				1187E3D02BB41AB30038FBF5 /* ContentView.swift in Sources */,
+				D918E51A2BBBB2170046A806 /* DrawerView.swift in Sources */,
 				1187E3CE2BB41AB30038FBF5 /* TestBlinkApp.swift in Sources */,
 				D92E2E072BBB016D0073FA14 /* GlobalValueProvider.swift in Sources */,
 				D92E2E012BBB011F0073FA14 /* BusRepository.swift in Sources */,
@@ -860,6 +872,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D918E51B2BBBB2F60046A806 /* XCRemoteSwiftPackageReference "swiftui-drawer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/swiftui-drawer.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D918E51C2BBBB2F60046A806 /* Drawer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D918E51B2BBBB2F60046A806 /* XCRemoteSwiftPackageReference "swiftui-drawer" */;
+			productName = Drawer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1187E3C22BB41AB30038FBF5 /* Project object */;
 }
